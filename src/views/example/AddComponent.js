@@ -1,7 +1,5 @@
 import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './myComponent.module.scss'
-const cx = classNames.bind(styles)
+
 class AddComponent extends React.Component {
 
     state={
@@ -25,7 +23,7 @@ class AddComponent extends React.Component {
             alert('Thiếu!')
             return;
         }
-        
+
         this.props.addNewjob({
             id:Math.floor(Math.random() * 1001).toString(),
             title:this.state.title,
@@ -40,7 +38,7 @@ class AddComponent extends React.Component {
     render() {
         return (
             <>
-                <form className={cx('form')}>
+                <form >
                     <label htmlFor='fname'>Job title:</label><br />
                     <input type="text" value={this.state.title}
                     onChange={(e)=>this.handleChangeTitleJob(e)}
