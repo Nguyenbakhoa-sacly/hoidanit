@@ -30,6 +30,7 @@ class MyComponent extends React.Component {
             arrjobs: currentJobs
         })
     }
+    
     render() {
         return(
             <>

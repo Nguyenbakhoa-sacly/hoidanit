@@ -1,0 +1,62 @@
+.wapper{
+    margin-left: 500px;
+    margin-top: 50px;
+    
+    .container{
+        height: 36px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        .todo_input{
+            margin-right: 10px;
+            padding-left: 8px;
+            height: 100%;
+            font-size: 16px;
+            outline: none;
+        }
+        .btn_add{
+            height: 36px;
+            padding: 3px 16px;
+            background-color: rgb(9, 148, 9);
+            color: white;
+            border: none;
+            font-weight: 600;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+    .list_todo{
+        width: 350px;
+
+        .list_todo-item{
+            padding: 14px 0;
+            
+            border-top: 1px solid #777777;
+            width:100% ;
+            display: flex;
+            justify-content: space-between;
+
+            .btn_edit-todo{
+                margin-right: 4px;
+                border: none;
+                color: white;
+                background-color: rgb(14, 74, 185) ;
+                padding: 4px 10px;
+                cursor: pointer;
+            }
+
+            .btn_delete-todo{
+                background-color: rgb(222, 30, 30);
+                color: white;
+                border: none;
+                padding: 4px 10px;
+                cursor: pointer;
+            }
+            .input_edit{
+                font-weight: 600;
+                padding: 4px 0 4px 4px;
+            }
+        }
+    }
+}

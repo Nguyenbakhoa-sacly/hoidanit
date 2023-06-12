@@ -9,11 +9,13 @@ class ChildComponent extends React.Component {
     state = {
         showJobs: false,
     }
+
     handleShowHide= ()=>{
         this.setState({
             showJobs: !this.state.showJobs
         })
     }
+    
     handleDelte =(job) => {
         this.props.deleteJob(job)
 
@@ -23,6 +25,7 @@ class ChildComponent extends React.Component {
 
         let { arrjobs } = this.props;
         let {showJobs} = this.state
+
         return(
             <>
             {showJobs ?
