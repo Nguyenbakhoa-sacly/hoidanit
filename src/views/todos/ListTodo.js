@@ -72,7 +72,6 @@ class ListTodo extends React.Component {
     render() {
         let { todolist, editTodo} = this.state
         let isEmptyObj = Object.keys(editTodo).length === 0;
-        console.log(isEmptyObj)
 
         return (
             <div className={cx('wapper')}>
