@@ -19,15 +19,14 @@ function App() {
     <Router>
       <div className={cx('app')}>
         <Nav/>
-
         <Switch>
-          <Route path="/about">
+          <Route path="/about" >
             <MyComponent />
           </Route>
           <Route path="/todo">
             <ListTodo />
           </Route>
-          <Route path="/" >
+          <Route path="/" exact>
             <Home />
           </Route>
         </Switch>
